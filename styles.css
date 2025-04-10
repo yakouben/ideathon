@@ -1,0 +1,798 @@
+/* Base font settings */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Typography improvements */
+h1 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+/* Navigation text */
+nav span {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+/* Price text */
+.text-gray-600 {
+    font-weight: 500;
+}
+
+/* Button text */
+button {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+/* Custom animations and transitions */
+.category-card {
+    transition: transform 0.3s ease;
+    scroll-snap-align: center;
+}
+
+.category-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.product-card {
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #88918a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8aa091;
+}
+
+/* Hero section animations */
+.hero-text {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Update hover effects to match hero image */
+.category-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.product-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Gradient overlay for hero image */
+.hero-overlay {
+    background: linear-gradient(
+        to right,
+        rgba(6, 102, 32, 0.8),
+        rgba(6, 102, 32, 0.4)
+    );
+}
+
+/* Hero section animations */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in-up 0.8s ease-out forwards;
+}
+
+/* Hero gradient overlay */
+.bg-gradient-overlay {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2)
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Cart sidebar scrollbar */
+#cartItems::-webkit-scrollbar {
+    width: 4px;
+}
+
+#cartItems::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#cartItems::-webkit-scrollbar-thumb {
+    background: rgba(6, 102, 32, 0.3);
+    border-radius: 4px;
+}
+
+#cartItems::-webkit-scrollbar-thumb:hover {
+    background: rgba(6, 102, 32, 0.5);
+}
+
+/* Cart item hover effect */
+#cartItems > div {
+    transition: transform 0.2s ease;
+}
+
+#cartItems > div:hover {
+    transform: translateX(-4px);
+}
+
+/* Cart sidebar glass effect */
+#cartSidebar .backdrop-blur-lg {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+#cartItems > div {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Checkout form styles */
+#checkoutModal {
+    animation: fadeIn 0.3s ease-out;
+}
+
+#checkoutModal .bg-white {
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form input focus styles */
+#checkoutForm input:focus {
+    box-shadow: 0 0 0 2px rgba(6, 102, 32, 0.1);
+}
+
+/* Hero animations */
+@keyframes scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(8px); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-scroll {
+    animation: scroll 1.5s ease-in-out infinite;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient text support */
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #066620, #0a8f2d);
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Smooth scrolling */
+.snap-x {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Category card animations */
+.category-card img {
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Hide default heart icon styles */
+.product-card .fa-heart {
+    transition: transform 0.3s ease;
+}
+
+.product-card .fa-heart:hover {
+    transform: scale(1.1);
+}
+
+/* Hide scrollbar but keep functionality */
+.overflow-x-auto {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+    display: none;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Product card hover effect */
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Bottom nav hover effects */
+nav {
+    transition: all 0.3s ease;
+}
+
+nav button {
+    transition: color 0.3s ease;
+}
+
+nav button:hover {
+    color: gray;
+}
+
+/* Remove the top nav specific styles */
+nav.scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section styles */
+.text-gradient-white {
+    background: linear-gradient(to right, #ffffff, #e2e2e2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Hero animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slowZoom {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.animate-slow-zoom {
+    animation: slowZoom 20s ease-out forwards;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 1s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+    animation: fadeIn 1s ease-out 0.6s forwards;
+    opacity: 0;
+}
+
+/* Button hover effects */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive text adjustments */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .w-48 {
+        width: 100%;
+        max-width: 16rem;
+    }
+}
+
+/* Update category pills styling */
+.category-pill {
+    padding: 8px 24px;
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-size: 14px;
+    background: #F5F5F5;
+    border: none;
+    color: #333;
+}
+
+.category-pill.active {
+    background: #000;
+    color: white;
+}
+
+.category-pill:hover:not(.active) {
+    background: #EAEAEA;
+}
+
+/* Remove the underline animation */
+.category-pill::after {
+    display: none;
+}
+
+/* Adjust the container spacing */
+.categories-container {
+    gap: 8px;
+    padding: 4px;
+}
+
+.font-kufi {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    direction: rtl;
+}
+
+/* Glass morphism effects */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Update hero gradient overlay */
+.bg-gradient-overlay {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2)
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Enhance text readability on glass */
+.glass-panel h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.glass-panel p {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Improve button contrast on glass */
+.glass-panel button {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* Arabic text styling */
+.font-kufi {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    direction: rtl;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .w-64 {
+        width: 12rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+}
+
+/* Workshop card animations and effects */
+.workshop-card {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.workshop-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.workshop-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Glass effect enhancements */
+.workshop-card .backdrop-blur-sm {
+    transition: all 0.3s ease;
+}
+
+.workshop-card:hover .backdrop-blur-sm {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Button animation */
+.workshop-card button {
+    transition: all 0.3s ease;
+}
+
+.workshop-card:hover button {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image hover effect */
+.workshop-card img {
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.workshop-card:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Top navigation styles */
+nav {
+    transition: all 0.3s ease;
+}
+
+nav.scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Search input styles */
+input[type="text"] {
+    transition: all 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+    color: #9CA3AF;
+}
+
+input[type="text"]:focus {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Cart badge animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.cart-badge {
+    animation: pulse 2s infinite;
+}
+
+/* Navigation hover effects */
+nav a:hover, nav button:hover {
+    color: #4F46E5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-container {
+        display: none;
+    }
+}
+
+/* Glassmorphism effect on scroll */
+nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .max-w-lg {
+        max-width: none;
+    }
+}
+
+/* Product loading animation */
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Product card hover effect */
+.product-card {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Product details page styles */
+.product-details-image {
+    transition: transform 0.3s ease;
+}
+
+.product-details-image:hover {
+    transform: scale(1.02);
+}
+
+/* Specifications grid */
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column;
+    }
+    
+    .product-details-image {
+        max-height: 300px;
+    }
+}
+
+/* Product gallery animations */
+.main-image-container img {
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+
+.thumbnail-container {
+    transition: all 0.2s ease;
+}
+
+.thumbnail-container:hover {
+    transform: translateY(-2px);
+}
+
+/* Product details animations */
+.product-gallery {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth image transitions */
+#mainImage {
+    transition: opacity 0.3s ease;
+}
+
+/* Specifications grid styling */
+#productSpecs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .product-gallery {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Thumbnail navigation */
+.thumbnail-nav {
+    transition: all 0.3s ease;
+}
+
+.thumbnail-nav.active {
+    border: 2px solid #2B2B2B;
+    border-radius: 0.5rem;
+}
+
+.thumbnail-nav:hover {
+    transform: translateY(-2px);
+}
+
+/* Main image transitions */
+#mainImage {
+    transition: opacity 0.3s ease;
+}
+
+/* Size selection buttons */
+#sizeOptions button {
+    transition: all 0.2s ease;
+}
+
+#sizeOptions button:hover {
+    transform: translateY(-1px);
+}
+
+/* Feature icons */
+.feature {
+    transition: transform 0.2s ease;
+}
+
+.feature:hover {
+    transform: translateY(-2px);
+}
+
+/* Service features animations */
+.service-feature {
+    transition: transform 0.2s ease;
+}
+
+.service-feature:hover {
+    transform: translateY(-2px);
+}
+
+.service-feature svg {
+    transition: transform 0.2s ease;
+}
+
+.service-feature:hover svg {
+    transform: scale(1.1);
+}
+
+/* Service feature background hover effect */
+.service-feature .w-10 {
+    transition: background-color 0.2s ease;
+}
+
+.service-feature:hover .w-10 {
+    background-color: #f3f4f6;
+}
+
+/* Add Playfair Display font styling */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Update image container styles */
+.bg-[#F8F9FA] {
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+/* Update main image styles */
+#mainImage {
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+}
+
+#mainImage:hover {
+    transform: scale(1.02);
+}
+
+/* Update thumbnail styles */
+.thumbnail-nav img {
+    border-radius: 1rem;
+}
+
+/* Add Arabic calligraphy font styling */
+.font-arabic {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 3.5rem; /* Larger size for better decoration visibility */
+    line-height: 1.5;
+    text-align: center;
+    color: #1a1a1a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add a subtle animation when the page loads */
+.brand-title-arabic {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}

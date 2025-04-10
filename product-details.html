@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Hamidatou</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row gap-12">
+            <!-- Left Side - Image Gallery -->
+            <div class="md:w-1/2">
+                <!-- Brand Title -->
+                <h1 class="font-arabic brand-title-arabic mb-8">حميداتو</h1>
+                
+                <!-- Thumbnail Navigation -->
+                <div class="flex flex-col gap-3 w-20 absolute">
+                    <div class="thumbnail-nav active">
+                        <img src="" alt="" class="w-full h-20 object-cover rounded-2xl cursor-pointer">
+                        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">1</span>
+                    </div>
+                    <!-- Additional thumbnails will be added dynamically -->
+                </div>
+
+                <!-- Main Image -->
+                <div class="ml-24">
+                    <div class="bg-[#F8F9FA] rounded-3xl px-8">
+                        <img id="mainImage" src="" alt="" class="w-full h-[500px] object-contain rounded-3xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Product Info -->
+            <div class="md:w-1/2 -mt-6">
+                <!-- Best Seller Badge -->
+                <div class="inline-block bg-gray-200 text-xs font-medium px-3 py-1 rounded-full mb-2">
+                    BEST SELLER
+                </div>
+
+                <!-- Brand -->
+                <div class="text-sm text-gray-600 mb-1" id="productBrand">
+                    EVERYDAY HUMANS
+                </div>
+
+                <!-- Product Name -->
+                <h1 id="productName" class="text-3xl font-medium mb-2"></h1>
+
+                <!-- Rating -->
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="flex text-yellow-400">
+                        <!-- Stars will be inserted here -->
+                    </div>
+                    <span class="text-sm text-gray-600">5</span>
+                </div>
+
+                <!-- Price -->
+                <div class="flex items-center gap-3 mb-4">
+                    <span id="productPrice" class="text-xl font-medium"></span>
+                    <span class="text-xl text-gray-400 line-through" id="originalPrice"></span>
+                    <span class="text-sm text-gray-600" id="discountBadge">-20%</span>
+                </div>
+
+                <!-- Description -->
+                <p id="productDescription" class="text-gray-600 mb-4"></p>
+                <!-- Add to Cart -->
+                <button class="w-full bg-[#2B2B2B] text-white py-4 rounded-full font-medium mb-4 hover:bg-black transition-colors">
+                    ADD TO CART
+                </button>
+
+
+                <!-- Additional Services -->
+                <div class="border-t border-gray-200 pt-4">
+                    <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+                        <!-- Fast Delivery -->
+                        <div class="service-feature text-center">
+                            <div class="w-10 h-10 mx-auto mb-2 bg-gray-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs font-medium">Fast Delivery</span>
+                        </div>
+
+                        <!-- Quality Guarantee -->
+                        <div class="service-feature text-center">
+                            <div class="w-10 h-10 mx-auto mb-2 bg-gray-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs font-medium">Quality Guarantee</span>
+                        </div>
+
+                        <!-- Installments -->
+                        <div class="service-feature text-center">
+                            <div class="w-10 h-10 mx-auto mb-2 bg-gray-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs font-medium">Installments</span>
+                        </div>
+
+                        <!-- Professional Training -->
+                        <div class="service-feature text-center">
+                            <div class="w-10 h-10 mx-auto mb-2 bg-gray-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                                </svg>
+                            </div>
+                            <span class="text-xs font-medium">Professional Training</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html> 
